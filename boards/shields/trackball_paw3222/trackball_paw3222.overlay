@@ -74,8 +74,8 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio1 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;  // D9 = P1.14 (MOTION) ← GPIO_PULL_UP追加！
 
-        // Scroll mode configuration
-        scroll-layers = <3>;  // Enable scroll mode on layer 3 (SCROLL layer)
+        // Note: PAW3222 driver doesn't support scroll-layers property yet
+        // Scroll functionality needs to be implemented at input-processor level
     };
 };
 
