@@ -73,6 +73,9 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio1 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;  // D9 = P1.14 (MOTION) ← GPIO_PULL_UP追加！
+
+        // Scroll mode configuration
+        scroll-layers = <3>;  // Enable scroll mode on layer 3 (SCROLL layer)
     };
 };
 
