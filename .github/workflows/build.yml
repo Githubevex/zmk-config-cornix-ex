@@ -8,3 +8,4 @@ jobs:
     with:
       build_matrix_path: config/build.yaml
       config_path: .
+      west_config_path: config/west.yml
