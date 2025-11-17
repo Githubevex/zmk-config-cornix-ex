@@ -64,6 +64,11 @@
 // Scroll mode: layer 3 (SCROLL) activates scroller via overlay configuration
 // Scroller configuration is in config/boards/cornix_left.overlay
 
+&lt {
+    flavor = "balanced";
+    quick-tap-ms = <0>;
+};
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -84,6 +89,12 @@
             key-positions = <2 3 4>;
             layers = <3>;
         };
+
+        Kana_Roma_Toggle {
+            bindings = <&kp LA(INT2)>;
+            key-positions = <9 10 11>;
+        };
+
     };
 
     macros {
