@@ -10,11 +10,6 @@ include:
     shield: cornix_indicator
     artifact-name: cornix_right
 
-  # Trackball Peripheral (Xiao nRF52840 + PAW3222)
-  - board: seeeduino_xiao_ble
-    shield: trackball_paw3222
-    artifact-name: trackball_peripheral
-
   # Settings reset (for troubleshooting)
   - board: cornix_left
     shield: settings_reset
