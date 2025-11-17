@@ -170,13 +170,13 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&none  &kp F1        &kp F2     &kp F3      &kp F4         &kp F5                                 &kp F6             &kp F7    &kp F8    &kp F9     &kp F10        &none
-&none  &kp JP_COLON  &kp EXCL   &kp SLASH   &kp JP_LPAREN  &kp JP_LBRACKET                        &kp JP_UNDERSCORE  &mkp MB1  &kp UP    &mkp MB2   &kp SEMICOLON  &none
-&none  &kp SEMI      &kp QMARK  &kp JP_YEN  &kp JP_RPAREN  &kp JP_RBRACKET  &kp JP_QUOTE  &trans  &kp JP_AT          &kp LEFT  &kp DOWN  &kp RIGHT  &kp F11        &none
-&none  &trans        &trans     &trans      &trans         &trans                                 &trans             &trans    &trans    &trans     &mt RSHFT F12  &none
+&kp ESC  &none    &kp F2     &kp F3      &kp F4     &kp F5                         &kp PAGE_UP       &kp HOME      &kp UP_ARROW      &kp END    &none      &none
+&trans   &kp F6   &kp F7     &kp F8      &kp F9     &kp F10                        &kp PAGE_DOWN     &kp LEFT      &kp DOWN          &kp RIGHT  &kp ENTER  &none
+&trans   &kp F11  &kp F12    &kp LA(F4)  &kp LC(Z)  &kp LS(LG(S))  &trans  &trans  &kp INT_MUHENKAN  &kp INT_KANA  &kp BACKSPACE     &kp DEL    &none      &none
+&trans   &none    &kp LG(E)  &none       &trans     &trans                         &none             &trans        &kp INT_MUHENKAN  &none      &none      &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         num_layer {
