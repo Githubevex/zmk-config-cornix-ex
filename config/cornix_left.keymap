@@ -128,7 +128,488 @@
             layers = <6>;
         };
 
+       n_ga {
+            bindings = <&n_ga>;
+            key-positions = <16 19>;
+            layers = <6>;
+            timeout-ms = <180>;
+        };
 
+        n_gi {
+            bindings = <&n_gi>;
+            key-positions = <19 2>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_gu {
+            bindings = <&n_gu>;
+            key-positions = <16 19 3>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_ge {
+            bindings = <&n_ge>;
+            key-positions = <14 19>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_go {
+            bindings = <&n_go>;
+            key-positions = <28 19>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_za {
+            bindings = <&n_za>;
+            key-positions = <16 7>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_ji {
+            bindings = <&n_ji>;
+            key-positions = <4 19>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_zu {
+            bindings = <&n_zu>;
+            key-positions = <16 9>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_ze {
+            bindings = <&n_ze>;
+            key-positions = <13 19>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_zo {
+            bindings = <&n_zo>;
+            key-positions = <29 19>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_da {
+            bindings = <&n_da>;
+            key-positions = <32 16>;
+            layers = <6>;
+            timeout-ms = <180>;
+        };
+
+        n_di {
+            bindings = <&n_di>;
+            key-positions = <19 17>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_du {
+            bindings = <&n_du>;
+            key-positions = <16 21>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_de {
+            bindings = <&n_de>;
+            key-positions = <3 19>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_do {
+            bindings = <&n_do>;
+            key-positions = <19 15>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_xa {
+            bindings = <&kp LS(NUMBER_3)>;
+            key-positions = <1 19>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_xi {
+            bindings = <&kp LS(E)>;
+            key-positions = <1 20>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_xu {
+            bindings = <&kp LS(N4)>;
+            key-positions = <1 21>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_xe {
+            bindings = <&kp LS(NUMBER_5)>;
+            key-positions = <1 9>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        x_xo {
+            bindings = <&kp LS(N6)>;
+            key-positions = <1 32>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_xya {
+            bindings = <&kp LS(NUMBER_7)>;
+            key-positions = <1 18>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_xyu {
+            bindings = <&kp LS(N8)>;
+            key-positions = <1 10>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_xyo {
+            bindings = <&kp LS(N9)>;
+            key-positions = <1 8>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_kya {
+            bindings = <&n_kya>;
+            key-positions = <18 2>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_kyu {
+            bindings = <&n_kyu>;
+            key-positions = <2 10>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_kyo {
+            bindings = <&n_kyo>;
+            key-positions = <2 8>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_sya {
+            bindings = <&n_sya>;
+            key-positions = <4 18>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_syu {
+            bindings = <&n_syu>;
+            key-positions = <10 4>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_syo {
+            bindings = <&n_syo>;
+            key-positions = <8 4>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_cya {
+            bindings = <&n_cya>;
+            key-positions = <18 17>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_cyu {
+            bindings = <&n_cyu>;
+            key-positions = <17 10>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_cyo {
+            bindings = <&n_cyo>;
+            key-positions = <8 17>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_nya {
+            bindings = <&n_nya>;
+            key-positions = <18 15>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_nyu {
+            bindings = <&n_nyu>;
+            key-positions = <10 15>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_nyo {
+            bindings = <&n_nyo>;
+            key-positions = <8 15>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_hya {
+            bindings = <&n_hya>;
+            key-positions = <18 26>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_hyu {
+            bindings = <&n_hyu>;
+            key-positions = <10 26>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_hyo {
+            bindings = <&n_hyo>;
+            key-positions = <8 26>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_mya {
+            bindings = <&n_mya>;
+            key-positions = <18 14>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_myu {
+            bindings = <&n_myu>;
+            key-positions = <10 14>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_myo {
+            bindings = <&n_myo>;
+            key-positions = <8 14>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_rya {
+            bindings = <&n_rya>;
+            key-positions = <18 3>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_ryu {
+            bindings = <&n_ryu>;
+            key-positions = <3 22>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_ryo {
+            bindings = <&n_ryo>;
+            key-positions = <8 3>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_gya {
+            bindings = <&n_gya>;
+            key-positions = <18 2 19>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_gyu {
+            bindings = <&n_gyu>;
+            key-positions = <2 19 10>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_gyo {
+            bindings = <&n_gyo>;
+            key-positions = <2 19 8>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_jya {
+            bindings = <&n_jya>;
+            key-positions = <18 19 4>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_jyu {
+            bindings = <&n_jyu>;
+            key-positions = <19 10 4>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_jyo {
+            bindings = <&n_jyo>;
+            key-positions = <19 8 4>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_dya {
+            bindings = <&n_dya>;
+            key-positions = <18 19 17>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_dyu {
+            bindings = <&n_dyu>;
+            key-positions = <19 10 17>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_dyo {
+            bindings = <&n_dyo>;
+            key-positions = <19 8 17>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_bya {
+            bindings = <&n_bya>;
+            key-positions = <18 19 26>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_byu {
+            bindings = <&n_byu>;
+            key-positions = <19 10 26>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_byo {
+            bindings = <&n_byo>;
+            key-positions = <19 8 26>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_pya {
+            bindings = <&n_pya>;
+            key-positions = <26 18 33>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_pyu {
+            bindings = <&n_pyu>;
+            key-positions = <10 26 33>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_pyo {
+            bindings = <&n_pyo>;
+            key-positions = <26 33 8>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_thi {
+            bindings = <&n_thi>;
+            key-positions = <3 20>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_twu {
+            bindings = <&n_twu>;
+            key-positions = <21 15>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_dei {
+            bindings = <&n_dei>;
+            key-positions = <3 19 20>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_dwu {
+            bindings = <&n_dwu>;
+            key-positions = <21 19 15>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_thu {
+            bindings = <&n_thu>;
+            key-positions = <3 10>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_dhu {
+            bindings = <&n_dhu>;
+            key-positions = <3 19 10>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_shie {
+            bindings = <&n_shie>;
+            key-positions = <4 9>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_chie {
+            bindings = <&n_chie>;
+            key-positions = <9 17>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_jie {
+            bindings = <&n_jie>;
+            key-positions = <9 19 4>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
+
+        n_je {
+            bindings = <&n_je>;
+            key-positions = <17 9 19>;
+            timeout-ms = <180>;
+            layers = <6>;
+        };
 
 
 
