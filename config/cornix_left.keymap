@@ -141,11 +141,12 @@
         Main {
             display-name = "Main";
 
-            // -----------------------------------------------------------------------------------------
-            // | NONE |  Q  |  W  |  E  |  R  |  T  |                   |  Y  |  U   |  I  |  O  |  P  | NONE |
-            // | NONE |  A  |  S  |  D  |  F  |  G  |  MUTE  |  |  UP  | TB  |  J   |  K  |  L  |  -  | NONE |
-            // | NONE |  Z  |  X  |  C  |  V  |  B  |  MCLK  |  | DOWN |  N  |  M   |  ,  |  .  |  /  | NONE |
-            //               | NONE | CTRL | WIN | ALT | SPC(L1) | GRV(L3) | | BKSP | ENT(L2) | NONE | NONE | NONE | NONE |
+            // ------------------------------------------------------------------------------------------------------------
+            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
+            // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
+            // |  TAB  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+            //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
 &none  &kp Q             &kp W         &kp E         &kp R        &kp T                                     &kp Y          &kp U        &kp I      &kp O       &kp P            &none
