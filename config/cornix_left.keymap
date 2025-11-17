@@ -113,6 +113,27 @@
             label = "KANATOLY0";
         };
 
+        Naginata: Naginata {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_KANA>, <&macro_wait_time 20>, <&to 6>;
+
+            label = "NAGINATA";
+        };
+
+        // 2025/10/19 Naginata Added
+
+        ng_on: ng_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LANGUAGE_1 &kp INTERNATIONAL_4 &to 6>;
+        };
+
+        ng_off: ng_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LANGUAGE_2 &kp INTERNATIONAL_5 &to 0>;
+        };
 
     };
 
