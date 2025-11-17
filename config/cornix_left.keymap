@@ -227,38 +227,34 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        scroll_layer {
-            // -----------------------------------------------------------------------------------------
-            // | NONE | BT0  | BT1  | BT2  | BT3  | BT4  |                   | ⌘⌃← | ⌘TAB | MB3  | TRANS| ⌘⌃→ | NONE |
-            // | NONE | TRANS| TRANS| TRANS| TRANS| TRANS|                   | MB4  | MB1  |  UP  | MB2  | MB5  | NONE |
-            // | NONE | TRANS| TRANS| TRANS| TRANS| TRANS| TRANS |  |  TO0  | TRANS| LEFT | DOWN | RGT  | TRANS| NONE |
-            //               | NONE | TRANS| TRANS| TRANS| TO0   | TRANS  |  | TRANS | TRANS| NONE | NONE | NONE | NONE |
+        Mouse {
+            display-name = "Mouse";
+
+            // ----------------------------------------------------------------------------------------------------------------------------
+            // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
+            // | moDEBUG| RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
+            // | EXTPWR | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
+            // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
+            //                    |         |         |         |         |         | |      |      |      |       |      |
 
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                 &kp LG(LC(LEFT))  &kp LG(TAB)  &mkp MB3  &trans     &kp LG(LC(RIGHT))  &none
-&none  &trans        &trans        &trans        &trans        &trans                       &mkp MB4          &mkp MB1     &kp UP    &mkp MB2   &mkp MB5           &none
-&none  &trans        &trans        &trans        &trans        &trans        &trans  &to 0  &trans            &kp LEFT     &kp DOWN  &kp RIGHT  &trans             &none
-&none  &trans        &trans        &trans        &to 0         &trans                       &trans            &trans       &trans    &trans     &trans             &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none                  &none  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none       &none
+&none  &none         &none         &kp ESC       &none  &none                  &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none       &none
+&none  &none         &none         &none         &none  &none  &trans  &trans  &none  &none           &mkp MCLK       &none            &none       &none
+&none  &none         &none         &none         &none  &none                  &none  &none           &kp N4          &none            &bt BT_CLR  &bt BT_CLR_ALL
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(KP_MINUS) LC(KP_PLUS) &inc_dec_kp PG_UP PG_DN>;
         };
 
-        mouse_layer {
-            // -----------------------------------------------------------------------------------------
-            // | NONE | TRANS| TRANS| TRANS| TRANS| TRANS|                   | TRANS| TRANS| MB3  | TRANS| TRANS| NONE |
-            // | NONE | TRANS| TRANS| TRANS| TRANS| TRANS|        |  |  TO0  | TRANS| MB1  | UP   | MB2  | TRANS| NONE |
-            // | NONE | TRANS| TRANS| TRANS| TRANS| TRANS| TRANS |  | TRANS | TRANS| LEFT | DOWN | RGT  | TRANS| NONE |
-            //               | NONE | TRANS| TRANS| TRANS| SPC(L1) | GRV(L3) |  | TRANS | ENT(L2) | NONE | NONE | NONE | BOOT |
-
+        KeyPad {
+            display-name = "KeyPad";
             bindings = <
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &trans      &mkp MB3  &trans    &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans                  &trans  &mkp MB1    &trans    &mkp MB2  &trans  &none
-&none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans    &trans  &none
-&none  &trans  &trans  &trans  &lt 1 SPACE  &lt 3 GRAVE         &trans  &lt 2 ENTER  &trans    &trans    &trans  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none   &bt BT_CLR                  &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &none
+&none  &none         &none         &none         &none   &none                       &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_DIVIDE    &none
+&none  &none         &none         &none         &none   &none       &trans  &trans  &kp KP_N0     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &none
+&none  &none         &none         &mo 0         &trans  &trans                      &none         &none            &none            &kp LC(LA(B))    &none            &none
             >;
-
-            sensor-bindings = <&WheelScroll SCRL_DOWN SCRL_UP &inc_dec_kp PG_UP PG_DN>;
         };
+
+
     };
 };
