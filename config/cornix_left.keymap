@@ -90,10 +90,47 @@
             layers = <3>;
         };
 
+        // eve Added
         Kana_Roma_Toggle {
             bindings = <&kp LA(INT2)>;
             key-positions = <9 10 11>;
         };
+
+        cb_enter {
+            bindings = <&kp RET>;
+            key-positions = <28 29>;
+            layers = <0 1>;
+        };
+
+        Main {
+            bindings = <&to 0>;
+            key-positions = <4 2>;
+            timeout-ms = <200>;
+        };
+
+        MVEdit {
+            bindings = <&to 3>;
+            key-positions = <16 14>;
+            timeout-ms = <200>;
+        };
+
+        combo_ng_on {
+            timeout-ms = <300>;
+            key-positions = <6 8>;
+            bindings = <&ng_on>;
+            layers = <0>;
+        };
+
+        combo_ng_off {
+            timeout-ms = <300>;
+            key-positions = <3 5>;
+            bindings = <&ng_off>;
+            layers = <6>;
+        };
+
+
+
+
 
     };
 
