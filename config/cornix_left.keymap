@@ -138,6 +138,9 @@
     keymap {
         compatible = "zmk,keymap";
 
+        Main {
+            display-name = "Main";
+
             // -----------------------------------------------------------------------------------------
             // | NONE |  Q  |  W  |  E  |  R  |  T  |                   |  Y  |  U   |  I  |  O  |  P  | NONE |
             // | NONE |  A  |  S  |  D  |  F  |  G  |  MUTE  |  |  UP  | TB  |  J   |  K  |  L  |  -  | NONE |
