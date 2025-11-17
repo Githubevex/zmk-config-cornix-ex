@@ -152,7 +152,7 @@
 &kp TAB    &kp Q         &kp W         &kp E             &kp R  &kp T                           &kp Y        &kp U      &kp I                    &kp O     &kp P     &kp LEFT_BRACKET
 &kp CAPS   &kp A         &kp S         &mt LEFT_SHIFT D  &kp F  &kp G                           &kp H        &kp J      &mt RIGHT_SHIFT K        &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z         &kp X         &kp C             &kp V  &kp B        &none  &kp C_MUTE  &kp N        &kp M      &kp COMMA                &kp DOT   &kp FSLH  &kp INT_RO
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 2             &mo 1  &lt 4 SPACE                     &lt 5 ENTER  &kp SPACE  &hmt RIGHT_SHIFT GRAVE   &kp LEFT  &mo 2     &kp RIGHT
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 2             &mo 1  &lt 4 SPACE                     &lt 5 ENTER  &kp SPACE  &mt RIGHT_SHIFT GRAVE    &kp LEFT  &mo 2     &kp RIGHT
             >;
 
             sensor-bindings = <&WheelScroll SCRL_DOWN SCRL_UP &inc_dec_kp PG_UP PG_DN>;
