@@ -31,7 +31,7 @@ manifest:
       revision: main
     - name: prospector-zmk-module
       remote: prospector
-      revision: trackpad-mode
+      revision: v1.1.2-dev-trackpad
       path: modules/prospector-zmk-module
   self:
     path: config
