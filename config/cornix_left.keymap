@@ -158,6 +158,26 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
+        Second {
+            display-name = "Second";
+
+            // ------------------------------------------------------------------------------------------------------------
+            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
+            // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
+            // |  TAB  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+            //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
+
+            bindings = <
+&trans  &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5                      &kp NUMBER_6           &kp NUMBER_7       &kp NUMBER_8      &kp NUMBER_9      &kp NUMBER_0      &kp RIGHT_BRACKET
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                  &kp RS(NUMBER_6)       &kp RS(NUMBER_7)   &kp RS(NUMBER_8)  &kp RS(NUMBER_9)  &kp RS(NUMBER_0)  &kp NUHS
+&trans  &none             &none             &kp F7            &kp F9            &trans            &trans  &trans  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp MINUS         &kp EQUAL         &kp INT3          &kp LS(INT3)
+&none   &none             &none             &none             &trans            &trans                            &kp BACKSPACE          &kp DEL            &kp INT_MUHENKAN  &none             &none             &none
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
         Function {
             display-name = "Function";
 
