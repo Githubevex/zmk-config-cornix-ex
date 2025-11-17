@@ -93,6 +93,14 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        KanaToLY0: KanaToLY0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT2>, <&macro_wait_time 20>, <&to 0>;
+
+            label = "KANATOLY0";
+        };
     };
 
     behaviors {
