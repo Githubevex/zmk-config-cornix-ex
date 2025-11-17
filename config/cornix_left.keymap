@@ -98,11 +98,12 @@
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+        Naginata: Naginata {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INT_KANA>, <&macro_wait_time 20>, <&to 6>;
+
+            label = "NAGINATA";
         };
 
         KanaToLY0: KanaToLY0 {
@@ -112,7 +113,449 @@
 
             label = "KANATOLY0";
         };
+
+        // 2025/10/19 Naginata Added
+
+        ng_on: ng_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LANGUAGE_1 &kp INTERNATIONAL_4 &to 6>;
+        };
+
+        ng_off: ng_off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LANGUAGE_2 &kp INTERNATIONAL_5 &to 0>;
+        };
+
+        n_ga: n_ga {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp LEFT_BRACKET>;
+            label = "N_GA";
+        };
+
+        n_gi: n_gi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp LEFT_BRACKET>;
+            label = "N_GI";
+        };
+
+        n_gu: n_gu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp LEFT_BRACKET>;
+            label = "N_GU";
+        };
+
+        n_ge: n_ge {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI &kp LEFT_BRACKET>;
+            label = "N_GE";
+        };
+
+        n_go: n_go {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp LEFT_BRACKET>;
+            label = "N_GO";
+        };
+
+        n_za: n_za {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp LEFT_BRACKET>;
+            label = "N_ZA";
+        };
+
+        n_ji: n_ji {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp LEFT_BRACKET>;
+            label = "N_JI";
+        };
+
+        n_zu: n_zu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp LEFT_BRACKET>;
+            label = "N_ZU";
+        };
+
+        n_ze: n_ze {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp LEFT_BRACKET>;
+            label = "N_ZE";
+        };
+
+        n_zo: n_zo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp LEFT_BRACKET>;
+            label = "N_ZO";
+        };
+
+        n_da: n_da {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp LEFT_BRACKET>;
+            label = "N_DA";
+        };
+
+        n_di: n_di {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp LEFT_BRACKET>;
+            label = "N_DI";
+        };
+
+        n_du: n_du {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Z &kp LEFT_BRACKET>;
+            label = "N_DU";
+        };
+
+        n_de: n_de {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp LEFT_BRACKET>;
+            label = "N_DE";
+        };
+
+        n_do: n_do {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp LEFT_BRACKET>;
+            label = "N_DO";
+        };
+
+        n_kya: n_kya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp LS(N7)>;
+            label = "N_KYA";
+        };
+
+        n_kyu: n_kyu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp LS(N8)>;
+            label = "N_KYU";
+        };
+
+        n_kyo: n_kyo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp LS(N9)>;
+            label = "N_KYO";
+        };
+
+        n_sya: n_sya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp LS(N7)>;
+            label = "N_SYA";
+        };
+
+        n_syu: n_syu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp LS(N8)>;
+            label = "N_SYU";
+        };
+
+        n_syo: n_syo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp LS(N9)>;
+            label = "N_SYO";
+        };
+
+        n_cya: n_cya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp LS(N7)>;
+            label = "N_CYA";
+        };
+
+        n_cyu: n_cyu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp LS(N8)>;
+            label = "N_CYU";
+        };
+
+        n_cyo: n_cyo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp LS(N9)>;
+            label = "N_CYO";
+        };
+
+        n_nya: n_nya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp LS(N7)>;
+            label = "N_NYA";
+        };
+
+        n_nyu: n_nyu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp LS(N8)>;
+            label = "N_NYU";
+        };
+
+        n_nyo: n_nyo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp LS(N9)>;
+            label = "N_NYO";
+        };
+
+        n_hya: n_hya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp LS(N7)>;
+            label = "N_HYA";
+        };
+
+        n_hyu: n_hyu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp LS(N8)>;
+            label = "N_HYU";
+        };
+
+        n_hyo: n_hyo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp LS(N9)>;
+            label = "N_HYO";
+        };
+
+        n_mya: n_mya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp LS(N7)>;
+            label = "N_MYA";
+        };
+
+        n_myu: n_myu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp LS(N8)>;
+            label = "N_MYU";
+        };
+
+        n_myo: n_myo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp LS(N9)>;
+            label = "N_MYO";
+        };
+
+        n_rya: n_rya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp LS(N7)>;
+            label = "N_RYA";
+        };
+
+        n_ryu: n_ryu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp LS(N8)>;
+            label = "N_RYU";
+        };
+
+        n_ryo: n_ryo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp LS(N9)>;
+            label = "N_RYO";
+        };
+
+        n_gya: n_gya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp LEFT_BRACKET &kp LS(N7)>;
+            label = "N_GYA";
+        };
+
+        n_gyu: n_gyu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp LEFT_BRACKET &kp LS(N8)>;
+            label = "N_GYU";
+        };
+
+        n_gyo: n_gyo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp LEFT_BRACKET &kp LS(N9)>;
+            label = "N_GYO";
+        };
+
+        n_jya: n_jya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp LEFT_BRACKET &kp LS(N7)>;
+            label = "N_JYA";
+        };
+
+        n_jyu: n_jyu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp LEFT_BRACKET &kp LS(N8)>;
+            label = "N_JYU";
+        };
+
+        n_jyo: n_jyo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp LEFT_BRACKET &kp LS(N9)>;
+            label = "N_JYO";
+        };
+
+        n_dya: n_dya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp LEFT_BRACKET &kp LS(N7)>;
+            label = "N_DYA";
+        };
+
+        n_dyu: n_dyu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp LEFT_BRACKET &kp LS(N8)>;
+            label = "N_DYU";
+        };
+
+        n_dyo: n_dyo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp LEFT_BRACKET &kp LS(N9)>;
+            label = "N_DYO";
+        };
+
+        n_bya: n_bya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp LEFT_BRACKET &kp LS(N7)>;
+            label = "N_BYA";
+        };
+
+        n_byu: n_byu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp LEFT_BRACKET &kp LS(N8)>;
+            label = "N_BYU";
+        };
+
+        n_byo: n_byo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp LEFT_BRACKET &kp LS(N9)>;
+            label = "N_BYO";
+        };
+
+        n_pya: n_pya {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp RIGHT_BRACKET &kp LS(N7)>;
+            label = "N_PYA";
+        };
+
+        n_pyu: n_pyu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp RIGHT_BRACKET &kp LS(N8)>;
+            label = "N_PYU";
+        };
+
+        n_pyo: n_pyo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp RIGHT_BRACKET &kp LS(N9)>;
+            label = "N_PYO";
+        };
+
+        n_thi: n_thi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp LS(E)>;
+            label = "N_THI";
+        };
+
+        n_twu: n_twu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp LS(N4)>;
+            label = "N_TWU";
+        };
+
+        n_dei: n_dei {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp LEFT_BRACKET &kp LS(E)>;
+            label = "N_DEI";
+        };
+
+        n_dwu: n_dwu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp LEFT_BRACKET &kp LS(N4)>;
+            label = "N_DWU";
+        };
+
+        n_thu: n_thu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp LS(N8)>;
+            label = "N_THU";
+        };
+
+        n_dhu: n_dhu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp LEFT_BRACKET &kp LS(N8)>;
+            label = "N_DHU";
+        };
+
+        n_shie: n_shie {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp LS(N5)>;
+            label = "N_SHIE";
+        };
+
+        n_chie: n_chie {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp LS(N5)>;
+            label = "N_CHIE";
+        };
+
+        n_jie: n_jie {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp D &kp LEFT_BRACKET &kp LS(N5)>;
+            label = "N_JIE";
+        };
+
+        n_je: n_je {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp LEFT_BRACKET &kp LS(N5)>;
+            label = "N_JE";
+        };
     };
+
 
     behaviors {
         // Auto-mouse layer activates on trackball movement
