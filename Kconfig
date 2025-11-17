@@ -1,7 +1,0 @@
-# Copyright (c) 2025 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-config SHIELD_TRACKBALL_PAW3222
-    def_bool $(shields_list_contains,trackball_paw3222)
-
-source "Kconfig.zephyr"
