@@ -1,4 +1,4 @@
-# ZMK Config for Cornix TB (Trackball)
+# ZMK Config for Cornix
 
 t-oguraさんのリポジトリを参考に利用させていただいています。
 <https://github.com/t-ogura/zmk-config-cornix-tb>
