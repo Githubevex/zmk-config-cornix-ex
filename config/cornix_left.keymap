@@ -85,12 +85,13 @@
         };
 
         bootloader {
-            bindings = <&none>;
-            key-positions = <2 3 4>;
+            bindings = <&bootloader>;
+            key-positions = <41 42 43>;
             layers = <3>;
         };
 
         // eve Added
+
         Kana_Roma_Toggle {
             bindings = <&kp LA(INT2)>;
             key-positions = <9 10 11>;
@@ -104,19 +105,19 @@
 
         Main {
             bindings = <&to 0>;
-            key-positions = <4 2>;
+            key-positions = <4 2 3>;
             timeout-ms = <200>;
         };
 
         MVEdit {
             bindings = <&to 3>;
-            key-positions = <16 14>;
+            key-positions = <16 14 15>;
             timeout-ms = <200>;
         };
 
         combo_ng_on {
             timeout-ms = <300>;
-            key-positions = <6 8>;
+            key-positions = <6 8 7>;
             bindings = <&ng_on>;
             layers = <0>;
         };
@@ -128,7 +129,7 @@
             layers = <6>;
         };
 
-       n_ga {
+        n_ga {
             bindings = <&n_ga>;
             key-positions = <16 19>;
             layers = <6>;
@@ -610,19 +611,9 @@
             timeout-ms = <180>;
             layers = <6>;
         };
-
-
-
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-
         KanaToLY0: KanaToLY0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1079,11 +1070,7 @@
             bindings = <&kp A &kp LEFT_BRACKET &kp LS(N5)>;
             label = "N_JE";
         };
-
-
-
     };
-
 
     behaviors {
         // Auto-mouse layer activates on trackball movement
@@ -1139,17 +1126,17 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB    &kp Q         &kp W         &kp E             &kp R  &kp T                           &kp Y        &kp U      &kp I                    &kp O     &kp P     &kp LEFT_BRACKET
-&kp CAPS   &kp A         &kp S         &mt LEFT_SHIFT D  &kp F  &kp G                           &kp H        &kp J      &mt RIGHT_SHIFT K        &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z         &kp X         &kp C             &kp V  &kp B        &none  &kp C_MUTE  &kp N        &kp M      &kp COMMA                &kp DOT   &kp FSLH  &kp INT_RO
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 2             &mo 1  &lt 4 SPACE                     &lt 5 ENTER  &kp SPACE  &mt RIGHT_SHIFT GRAVE    &kp LEFT  &mo 2     &kp RIGHT
+&kp TAB    &kp Q         &kp W         &kp E             &kp R  &kp T                           &kp Y        &kp U      &kp I                  &kp O     &kp P     &kp LEFT_BRACKET
+&kp CAPS   &kp A         &kp S         &mt LEFT_SHIFT D  &kp F  &kp G                           &kp H        &kp J      &mt RIGHT_SHIFT K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z         &kp X         &kp C             &kp V  &kp B        &none  &kp C_MUTE  &kp N        &kp M      &kp COMMA              &kp DOT   &kp FSLH  &kp INT_RO
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 2             &mo 1  &lt 4 SPACE                     &lt 5 ENTER  &kp SPACE  &mt RIGHT_SHIFT GRAVE  &kp LEFT  &mo 2     &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        Second {
-            display-name = "Second";
+        Sub {
+            display-name = "Sub";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -1168,8 +1155,8 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        Function {
-            display-name = "Function";
+        Func {
+            display-name = "Func";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // -------------------------------
@@ -1254,6 +1241,5 @@
 &trans  &trans  &trans  &trans      &trans         &trans                          &trans        &trans       &trans     &trans  &trans        &trans
             >;
         };
-
     };
 };
