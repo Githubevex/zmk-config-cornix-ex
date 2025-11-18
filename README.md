@@ -1,5 +1,14 @@
 # ZMK Config for Cornix TB (Trackball)
 
+t-oguraさんのリポジトリを参考に利用させていただいています。
+<https://github.com/t-ogura/zmk-config-cornix-tb>
+
+
+
+**----- 以下オリジナル文 -----**
+
+## ZMK Config for Cornix TB (Trackball)
+
 Cornixとモジュール型トラックボールを連携させ、一つのキーボードとして利用できるようにするZMKファームウェアです。
 
 ## モジュール型トラックボール
