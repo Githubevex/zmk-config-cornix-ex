@@ -1084,24 +1084,6 @@
             trigger-period-ms = <16>;
         };
 
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        tapdance_kana: tapdance_kana {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE_KANA";
-            #binding-cells = <0>;
-            bindings = <&kp INT2>, <&kp LANGUAGE_2>, <&sl 1>;
-
-            tapping-term-ms = <400>;
-        };
-
         WheelScroll: WheelScroll {
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "WHEELSCROLL";
@@ -1217,10 +1199,10 @@
         KeyPad {
             display-name = "KeyPad";
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none   &bt BT_CLR                  &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &none
-&none  &none         &none         &none         &none   &none                       &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_DIVIDE    &none
-&none  &none         &none         &none         &none   &none       &trans  &trans  &kp KP_N0     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &none
-&none  &none         &none         &mo 0         &trans  &trans                      &none         &none            &none            &kp LC(LA(B))    &none            &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none   &none                   &kp KP_PLUS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &none
+&none  &none         &none         &none         &none   &none                   &kp KP_MINUS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_DIVIDE    &none
+&none  &none         &none         &none         &none   &none   &trans  &trans  &kp KP_N0     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &none
+&none  &none         &none         &mo 0         &trans  &trans                  &none         &none            &none            &kp LC(LA(B))    &none            &none
             >;
         };
 
