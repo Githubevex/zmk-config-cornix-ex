@@ -32,6 +32,6 @@ raw_binding_map:
 
 # レイヤー優先順の例
 layer_order:
-  - Def
-  - Lwr
-  - Rse
+  - Main
+  - Sub
+  - Func
