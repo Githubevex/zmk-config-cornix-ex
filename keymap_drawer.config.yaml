@@ -1,0 +1,9 @@
+# 描画時の設定（キーサイズ・間隔・フォントなど）
+draw_config:
+  key_w: 60          # キーの横幅（px）
+  key_h: 60          # キーの高さ（px）
+  key_padding: 6     # キー間の余白
+  combo_w: 24        # コンボ表示の幅
+  combo_h: 22        # コンボ表示の高さ
+  font_size: 16      # フォントサイズ
+  default_layer: "Main" # デフォルトレイヤー
