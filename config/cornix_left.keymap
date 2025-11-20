@@ -80,25 +80,7 @@
     };
 
     behaviors {
-        // Auto-mouse layer activates on trackball movement
 
-        auto_mouse: auto_mouse {
-            compatible = "zmk,behavior-input-two-axis";
-            #binding-cells = <1>;
-            x-input-code = <INPUT_REL_X>;
-            y-input-code = <INPUT_REL_Y>;
-            time-to-max-speed-ms = <300>;
-            trigger-period-ms = <16>;
-        };
-
-        WheelScroll: WheelScroll {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "WHEELSCROLL";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
-
-            tap-ms = <20>;
-        };
     };
 
     keymap {
