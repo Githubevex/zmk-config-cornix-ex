@@ -3,7 +3,7 @@
 t-oguraさんのリポジトリを参考に利用させていただいています。
 <https://github.com/t-ogura/zmk-config-cornix-tb>
 
-
+<img src="keymap-drawer/cornix_left.svg" >
 
 **----- 以下オリジナル文 -----**
 
