@@ -29,9 +29,3 @@ raw_binding_map:
   "&bootloader": "BOOT"
   "&trans": "TRANSPARENT"
   "&none": "NONE"
-
-# レイヤー優先順の例
-layer_order:
-  - Main
-  - Sub
-  - Func
