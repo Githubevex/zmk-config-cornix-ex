@@ -1,7 +1,4 @@
-layout:
-  zmk_keyboard: cornix_left
-  dts_layout: config/cornix-layouts.dtsi
-  layout_name: layout_50
+layout: {zmk_keyboard: cornix_left}
 layers:
   Main:
   - TAB
