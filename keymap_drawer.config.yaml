@@ -1,2 +1,0 @@
-keymap_patterns: "config/*.keymap"
-output_folder: "keymap-drawer"
