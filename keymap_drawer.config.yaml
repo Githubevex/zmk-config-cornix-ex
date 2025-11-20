@@ -6,14 +6,6 @@ keymap_patterns: "config/*.keymap"
 # 出力フォルダ（SVGやYAML生成ファイルの保存先）
 output_folder: "keymap-drawer"
 
-# keymap parseコマンドに渡す引数（機種名ごとに必要なら設定）
-parse_args:
-  default: ""
-
-# keymap drawコマンドに渡す引数（キー配置ごとのカスタマイズなど）
-draw_args:
-  default: ""
-
 # 描画時の細かな設定（キーサイズ・間隔・フォントなど）
 draw_config:
   key_w: 60          # キーの横幅（px）
