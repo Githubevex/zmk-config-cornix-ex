@@ -17,5 +17,5 @@ jobs:
       keymap_patterns: "config/*.keymap"
       config_path: "keymap_drawer.config.yaml"
       output_folder: "keymap-drawer"
-      parse_args: ""
-      draw_args: ""
+      parse_args: "cornix_left:'-b keymap-drawer/cornix_left.yaml'"
+      draw_args: "cornix_left:'-d config/cornix-layouts.dtsi -l layout_50'"
