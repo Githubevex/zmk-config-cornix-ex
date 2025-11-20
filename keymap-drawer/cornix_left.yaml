@@ -1,0 +1,642 @@
+layout:
+  zmk_keyboard: cornix_left
+  dts_layout: config/cornix-layouts.dtsi
+  layout_name: layout_50
+layers:
+  Main:
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - CAPS
+  - A
+  - S
+  - {t: D, h: LEFT SHIFT}
+  - F
+  - G
+  - H
+  - J
+  - {t: K, h: RIGHT SHIFT}
+  - L
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - ''
+  - MUTE
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - INT RO
+  - LCTRL
+  - LEFT WIN
+  - LEFT ALT
+  - Func
+  - Sub
+  - {t: SPACE, h: Mouse}
+  - {t: ENTER, h: KeyPad}
+  - SPACE
+  - {t: '`', h: RIGHT SHIFT}
+  - LEFT
+  - Func
+  - RIGHT
+  Sub:
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - ']'
+  - {t: ▽, type: trans}
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - Sft+4
+  - Sft+5
+  - Sft+6
+  - Sft+7
+  - Sft+8
+  - Sft+9
+  - Sft+0
+  - '#'
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - F7
+  - F9
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+]
+  - Sft+\
+  - '-'
+  - '='
+  - INT3
+  - Sft+INT3
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - BACKSPACE
+  - DEL
+  - INT MUHENKAN
+  - ''
+  - ''
+  - ''
+  Func:
+  - ESC
+  - ''
+  - F2
+  - F3
+  - F4
+  - F5
+  - PAGE UP
+  - HOME
+  - UP ARROW
+  - END
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - PAGE DOWN
+  - LEFT
+  - DOWN
+  - RIGHT
+  - ENTER
+  - ''
+  - {t: ▽, type: trans}
+  - F11
+  - F12
+  - Alt+F4
+  - Ctl+Z
+  - Sft+Gui+S
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - INT MUHENKAN
+  - INT KANA
+  - BACKSPACE
+  - DEL
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - Gui+E
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - {t: ▽, type: trans}
+  - INT MUHENKAN
+  - ''
+  - ''
+  - ''
+  MVEdit:
+  - Sft+ESC
+  - ''
+  - HOME
+  - BACKSPACE
+  - END
+  - Ctl+Z
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ENTER
+  - Ctl+R
+  - UP ARROW
+  - Ctl+B
+  - DOWN
+  - Sft+Z
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LSHFT
+  - ''
+  - Ctl+H
+  - C
+  - Ctl+C
+  - Ctl+V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LCTRL
+  - ''
+  - ''
+  - LCTRL
+  - LEFT ALT
+  - SPACE
+  - ''
+  - ''
+  - '&KanaToLY0'
+  - ''
+  - ''
+  - ''
+  Mouse:
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - ''
+  - ''
+  - ''
+  - '&mkp LCLK'
+  - '&mmv MOVE_UP'
+  - '&mkp RCLK'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ESC
+  - ''
+  - ''
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - '&mkp MCLK'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - '4'
+  - ''
+  - BT CLR
+  - BT CLR ALL
+  KeyPad:
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - ''
+  - ''
+  - KP PLUS
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP MULTIPLY
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - KP MINUS
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP DIVIDE
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 0
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP DOT
+  - ''
+  - ''
+  - ''
+  - ''
+  - Main
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  - ''
+  - Ctl+Alt+B
+  - ''
+  - ''
+  Nagi1:
+  - TAB
+  - ''
+  - G
+  - W
+  - D
+  - LEFT
+  - RIGHT
+  - BACKSPACE
+  - .
+  - R
+  - '='
+  - DELETE
+  - CAPSLOCK
+  - INT1
+  - ''''
+  - S
+  - T
+  - Sft+Z
+  - H
+  - '3'
+  - E
+  - '4'
+  - INT3
+  - '['
+  - LEFT SHIFT
+  - '-'
+  - V
+  - F
+  - B
+  - C
+  - ''
+  - {t: ▽, type: trans}
+  - Q
+  - U
+  - Y
+  - O
+  - ;
+  - ']'
+  - LCTRL
+  - LEFT GUI
+  - LEFT ALT
+  - Func
+  - Nagi2
+  - SPACE
+  - ENTER
+  - {t: SPACE, h: Nagi2}
+  - ''
+  - LEFT
+  - {t: Main, h: toggle}
+  - RIGHT
+  Nagi2:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Q
+  - L
+  - /
+  - LEFT ARROW
+  - RIGHT
+  - X
+  - '9'
+  - '5'
+  - '8'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - P
+  - N
+  - I
+  - J
+  - A
+  - '7'
+  - K
+  - M
+  - Z
+  - '2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+0
+  - Sft+,
+  - '#'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '6'
+  - Sft+.
+  - ','
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [1, 5]
+  k: BT CLR ALL
+  l: [MVEdit]
+- p: [41, 42, 43]
+  k: '&bootloader'
+  l: [MVEdit]
+- p: [9, 10, 11]
+  k: Alt+INT2
+- p: [28, 29]
+  k: RET
+  l: [Main, Sub]
+- p: [4, 2, 3]
+  k: {t: Main, h: toggle}
+- p: [16, 14, 15]
+  k: {t: MVEdit, h: toggle}
+- p: [6, 8, 7]
+  k: '&ng_on'
+  l: [Main]
+- p: [3, 5]
+  k: '&ng_off'
+  l: [Nagi1]
+- p: [16, 19]
+  k: '&n_ga'
+  l: [Nagi1]
+- p: [19, 2]
+  k: '&n_gi'
+  l: [Nagi1]
+- p: [16, 19, 3]
+  k: '&n_gu'
+  l: [Nagi1]
+- p: [14, 19]
+  k: '&n_ge'
+  l: [Nagi1]
+- p: [28, 19]
+  k: '&n_go'
+  l: [Nagi1]
+- p: [16, 7]
+  k: '&n_za'
+  l: [Nagi1]
+- p: [4, 19]
+  k: '&n_ji'
+  l: [Nagi1]
+- p: [16, 9]
+  k: '&n_zu'
+  l: [Nagi1]
+- p: [13, 19]
+  k: '&n_ze'
+  l: [Nagi1]
+- p: [29, 19]
+  k: '&n_zo'
+  l: [Nagi1]
+- p: [32, 16]
+  k: '&n_da'
+  l: [Nagi1]
+- p: [19, 17]
+  k: '&n_di'
+  l: [Nagi1]
+- p: [16, 21]
+  k: '&n_du'
+  l: [Nagi1]
+- p: [3, 19]
+  k: '&n_de'
+  l: [Nagi1]
+- p: [19, 15]
+  k: '&n_do'
+  l: [Nagi1]
+- p: [1, 19]
+  k: Sft+3
+  l: [Nagi1]
+- p: [1, 20]
+  k: Sft+E
+  l: [Nagi1]
+- p: [1, 21]
+  k: Sft+4
+  l: [Nagi1]
+- p: [1, 9]
+  k: Sft+5
+  l: [Nagi1]
+- p: [1, 32]
+  k: Sft+6
+  l: [Nagi1]
+- p: [1, 18]
+  k: Sft+7
+  l: [Nagi1]
+- p: [1, 10]
+  k: Sft+8
+  l: [Nagi1]
+- p: [1, 8]
+  k: Sft+9
+  l: [Nagi1]
+- p: [18, 2]
+  k: '&n_kya'
+  l: [Nagi1]
+- p: [2, 10]
+  k: '&n_kyu'
+  l: [Nagi1]
+- p: [2, 8]
+  k: '&n_kyo'
+  l: [Nagi1]
+- p: [4, 18]
+  k: '&n_sya'
+  l: [Nagi1]
+- p: [10, 4]
+  k: '&n_syu'
+  l: [Nagi1]
+- p: [8, 4]
+  k: '&n_syo'
+  l: [Nagi1]
+- p: [18, 17]
+  k: '&n_cya'
+  l: [Nagi1]
+- p: [17, 10]
+  k: '&n_cyu'
+  l: [Nagi1]
+- p: [8, 17]
+  k: '&n_cyo'
+  l: [Nagi1]
+- p: [18, 15]
+  k: '&n_nya'
+  l: [Nagi1]
+- p: [10, 15]
+  k: '&n_nyu'
+  l: [Nagi1]
+- p: [8, 15]
+  k: '&n_nyo'
+  l: [Nagi1]
+- p: [18, 26]
+  k: '&n_hya'
+  l: [Nagi1]
+- p: [10, 26]
+  k: '&n_hyu'
+  l: [Nagi1]
+- p: [8, 26]
+  k: '&n_hyo'
+  l: [Nagi1]
+- p: [18, 14]
+  k: '&n_mya'
+  l: [Nagi1]
+- p: [10, 14]
+  k: '&n_myu'
+  l: [Nagi1]
+- p: [8, 14]
+  k: '&n_myo'
+  l: [Nagi1]
+- p: [18, 3]
+  k: '&n_rya'
+  l: [Nagi1]
+- p: [3, 22]
+  k: '&n_ryu'
+  l: [Nagi1]
+- p: [8, 3]
+  k: '&n_ryo'
+  l: [Nagi1]
+- p: [18, 2, 19]
+  k: '&n_gya'
+  l: [Nagi1]
+- p: [2, 19, 10]
+  k: '&n_gyu'
+  l: [Nagi1]
+- p: [2, 19, 8]
+  k: '&n_gyo'
+  l: [Nagi1]
+- p: [18, 19, 4]
+  k: '&n_jya'
+  l: [Nagi1]
+- p: [19, 10, 4]
+  k: '&n_jyu'
+  l: [Nagi1]
+- p: [19, 8, 4]
+  k: '&n_jyo'
+  l: [Nagi1]
+- p: [18, 19, 17]
+  k: '&n_dya'
+  l: [Nagi1]
+- p: [19, 10, 17]
+  k: '&n_dyu'
+  l: [Nagi1]
+- p: [19, 8, 17]
+  k: '&n_dyo'
+  l: [Nagi1]
+- p: [18, 19, 26]
+  k: '&n_bya'
+  l: [Nagi1]
+- p: [19, 10, 26]
+  k: '&n_byu'
+  l: [Nagi1]
+- p: [19, 8, 26]
+  k: '&n_byo'
+  l: [Nagi1]
+- p: [26, 18, 33]
+  k: '&n_pya'
+  l: [Nagi1]
+- p: [10, 26, 33]
+  k: '&n_pyu'
+  l: [Nagi1]
+- p: [26, 33, 8]
+  k: '&n_pyo'
+  l: [Nagi1]
+- p: [3, 20]
+  k: '&n_thi'
+  l: [Nagi1]
+- p: [21, 15]
+  k: '&n_twu'
+  l: [Nagi1]
+- p: [3, 19, 20]
+  k: '&n_dei'
+  l: [Nagi1]
+- p: [21, 19, 15]
+  k: '&n_dwu'
+  l: [Nagi1]
+- p: [3, 10]
+  k: '&n_thu'
+  l: [Nagi1]
+- p: [3, 19, 10]
+  k: '&n_dhu'
+  l: [Nagi1]
+- p: [4, 9]
+  k: '&n_shie'
+  l: [Nagi1]
+- p: [9, 17]
+  k: '&n_chie'
+  l: [Nagi1]
+- p: [9, 19, 4]
+  k: '&n_jie'
+  l: [Nagi1]
+- p: [17, 9, 19]
+  k: '&n_je'
+  l: [Nagi1]
