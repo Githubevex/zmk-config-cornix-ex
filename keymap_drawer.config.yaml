@@ -26,6 +26,6 @@ draw_config:
 
 # キーコードの人間可読名マップ（一部例）
 raw_binding_map:
-  "&bootloader": "BOOT"
-  "&trans": "TRANSPARENT"
-  "&none": "NONE"
+  "bootloader": "BOOT"
+  "trans": "TRANSPARENT"
+  "none": "NONE"
