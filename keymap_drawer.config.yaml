@@ -23,9 +23,3 @@ draw_config:
   combo_h: 22        # コンボ表示の高さ
   font_size: 16      # フォントサイズ
   default_layer: "Main" # デフォルトレイヤー名
-
-# キーコードの人間可読名マップ（一部例）
-raw_binding_map:
-  "&bootloader": "BOOT"
-  "&trans": "TRANSPARENT"
-  "&none": "NONE"
