@@ -46,6 +46,22 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 
+// Configure auto-mouse layer using Input Processor approach
+// Based on: https://scrapbox.io/self-made-kbds-ja/ZMK%E3%81%A7%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%82%A6%E3%82%B9%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B
+
+&trackball_listener {
+    // Auto-mouse layer: activates layer 4 (MOUSE) when trackball moves, 600ms timeout
+    // Invert both X and Y axes to reverse trackball direction (180-degree rotation)
+    // Value 6 = INPUT_TRANSFORM_X_INVERT (2) | INPUT_TRANSFORM_Y_INVERT (4)
+    // Scaler reduces mouse pointer speed to 2/3 for better precision
+
+    input-processors = <
+        &zip_xy_transform 6
+        &zip_xy_scaler 2 3
+        &zip_temp_layer MOUSE 600
+    >;
+};
+
 // Scroll mode: layer 3 (SCROLL) activates scroller via overlay configuration
 // Scroller configuration is in config/boards/cornix_left.overlay
 
@@ -1060,6 +1076,23 @@
     behaviors {
         // Auto-mouse layer activates on trackball movement
 
+        auto_mouse: auto_mouse {
+            compatible = "zmk,behavior-input-two-axis";
+            #binding-cells = <1>;
+            x-input-code = <INPUT_REL_X>;
+            y-input-code = <INPUT_REL_Y>;
+            time-to-max-speed-ms = <300>;
+            trigger-period-ms = <16>;
+        };
+
+        WheelScroll: WheelScroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "WHEELSCROLL";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
