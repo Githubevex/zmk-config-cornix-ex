@@ -4,9 +4,7 @@ on:
   push:
     paths:
       - 'config/*.keymap'
-      - 'config/*.dtsi'
       - 'keymap_drawer.config.yaml'
-      - 'boards/arm/cornix/*.dtsi'
       # 必要であれば追加のパスを追記可能
 
 jobs:
