@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - 'config/*.keymap'
+      - 'config/*.dtsi'
+      - 'keymap_drawer.config.yaml'
+      # 必要であれば追加のパスを追記可能
 
 jobs:
   draw:
@@ -12,7 +15,7 @@ jobs:
       contents: write
     with:
       keymap_patterns: "config/*.keymap"
+      config_path: "keymap_drawer.config.yaml"
       output_folder: "keymap-drawer"
-      parse_args: ""
-      draw_args: ""
-# コミットメッセージやamend_commitの指定などカスタマイズオプションも利用可能
+      parse_args: "cornix_left:'-b keymap-drawer/cornix_left.yaml'"
+      draw_args: "cornix_left:'-d config/cornix-layouts.dtsi -l layout_50'"
