@@ -5,7 +5,26 @@ Firmware/*.uf2
 # West dependencies
 .west/
 zmk/
+zephyr/
 modules/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.code-workspace
+
+# Logs / temp
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Firmware artifacts (additional)
+Firmware/*.hex
+Firmware/*.bin
+Firmware/*.elf
+Firmware/*.map
 
 # OS files
 .DS_Store
