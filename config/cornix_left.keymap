@@ -1054,11 +1054,6 @@
         };
     };
 
-    behaviors {
-
-
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -1093,10 +1088,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&trans  &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5                      &kp NUMBER_6           &kp NUMBER_7       &kp NUMBER_8      &kp NUMBER_9      &kp NUMBER_0      &kp RIGHT_BRACKET
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                  &kp RS(NUMBER_6)       &kp RS(NUMBER_7)   &kp RS(NUMBER_8)  &kp RS(NUMBER_9)  &kp RS(NUMBER_0)  &kp NUHS
-&trans  &none             &none             &kp F7            &kp F9            &trans            &trans  &trans  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp MINUS         &kp EQUAL         &kp INT3          &kp LS(INT3)
-&none   &none             &none             &none             &trans            &trans                            &kp BACKSPACE          &kp DEL            &kp INT_MUHENKAN  &none             &none             &none
+&trans  &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp NUMBER_5                      &kp NUMBER_6           &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_9      &kp NUMBER_0      &kp RIGHT_BRACKET
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                  &kp RS(NUMBER_6)       &kp RS(NUMBER_7)  &kp RS(NUMBER_8)  &kp RS(NUMBER_9)  &kp RS(NUMBER_0)  &kp NUHS
+&trans  &none             &none             &kp F7            &kp F9            &kp LS(Z)         &trans  &trans  &kp LS(RIGHT_BRACKET)  &kp LS(NUHS)      &kp MINUS         &kp EQUAL         &kp INT3          &kp LS(INT3)
+&none   &none             &none             &none             &trans            &trans                            &kp BACKSPACE          &kp DEL           &kp INT_MUHENKAN  &kp LS(MINUS)     &none             &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -1114,8 +1109,8 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp ESC  &none    &kp F2     &kp F3      &kp F4     &kp F5                         &kp PAGE_UP       &kp HOME      &kp UP_ARROW      &kp END    &none      &none
-&trans   &kp F6   &kp F7     &kp F8      &kp F9     &kp F10                        &kp PAGE_DOWN     &kp LEFT      &kp DOWN          &kp RIGHT  &kp ENTER  &none
+&kp ESC  &none    &kp F2     &kp F3      &kp F4     &kp F5                         &kp PAGE_UP       &kp HOME      &kp UP_ARROW      &kp END    &none      &kp RBKT
+&trans   &kp F6   &kp F7     &kp F8      &kp F9     &kp F10                        &kp PAGE_DOWN     &kp LEFT      &kp DOWN          &kp RIGHT  &kp ENTER  &kp NUHS
 &trans   &kp F11  &kp F12    &kp LA(F4)  &kp LC(Z)  &kp LS(LG(S))  &trans  &trans  &kp INT_MUHENKAN  &kp INT_KANA  &kp BACKSPACE     &kp DEL    &none      &none
 &trans   &none    &kp LG(E)  &none       &trans     &trans                         &none             &trans        &kp INT_MUHENKAN  &none      &none      &none
             >;
@@ -1134,10 +1129,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp LS(ESC)  &none      &kp HOME      &kp BACKSPACE  &kp END       &kp LC(Z)                  &none  &none  &none       &none  &none  &none
-&kp ENTER    &kp LC(R)  &kp UP_ARROW  &kp LC(B)      &kp DOWN      &kp LS(Z)                  &none  &none  &none       &none  &none  &none
-&kp LSHFT    &none      &kp LC(H)     &kp C          &kp LC(C)     &kp LC(V)  &trans  &trans  &none  &none  &none       &none  &none  &none
-&kp LCTRL    &none      &none         &kp LCTRL      &kp LEFT_ALT  &kp SPACE                  &none  &none  &KanaToLY0  &none  &none  &none
+&kp LS(ESC)  &kp LS(BACKSPACE)  &kp HOME      &kp BACKSPACE  &kp END       &kp LC(Z)                  &none  &none  &none       &none  &none  &none
+&kp ENTER    &kp LC(R)          &kp UP_ARROW  &kp LC(B)      &kp DOWN      &kp LS(Z)                  &none  &none  &none       &none  &none  &none
+&kp LSHFT    &none              &kp LC(H)     &kp C          &kp LC(C)     &kp LC(V)  &trans  &trans  &none  &none  &none       &none  &none  &none
+&kp LCTRL    &none              &none         &kp LCTRL      &kp LEFT_ALT  &kp SPACE                  &none  &none  &KanaToLY0  &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
