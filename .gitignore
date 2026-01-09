@@ -1,0 +1,14 @@
+# Build artifacts
+build/
+Firmware/*.uf2
+
+# West dependencies
+.west/
+zmk/
+modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+仕様.md
+Build.ps1
