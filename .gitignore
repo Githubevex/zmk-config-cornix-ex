@@ -8,6 +8,10 @@ zmk/
 zephyr/
 modules/
 
+zmk-helpers/
+zmk-keyboard-cornix/
+zmk-rgbled-widget/
+
 # IDE / Editor
 .vscode/
 .idea/
